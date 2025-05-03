@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Profile Landing Page</title>
+     <script>
+        window.chatpilotConfig = {
+          chatbotId: "257cd20f4bcb4dceb8d07ba9697d1f94",
+          domain: "https://www.newoaks.ai"
+        }
+      </script>
+      <script
+        src="https://www.newoaks.ai/embed.min.js"
+        charset="utf-8"
+        defer
+      ></script> 
+</head>
+<body>
+    <div id="main">
+        <nav class="navbar">
+            <div class="logo">HN Coding</div>
+            <ul class="nav-links">
+                <li><a href=".home">Home</a></li>
+                <li><a href=".skills">My skills</a></li>
+                <li><a href=".blog">portfolio</a></li>
+                <li><a href=".contact">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-brands fa-facebook" ></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+            </div>
+        </nav>
+
+        <div class="home">
+            <div data-aos="zoom-out" data-aos-duration="2000" class="img">
+                <img src="IMG_20250228_103044 (1).jpg" alt="">
+            </div>
+            <div  data-aos="zoom-out-down" class="text">
+                <h1 class="name">Hassnain Nazir</h1>
+                <h3 class="skill">Frontend Developer</h3>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h1 class="title">My Skills</h1>
+
+            <div data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="800" class="container">
+                <span class="skill-title">HTML</span>
+                <div class="progress-bar">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <span class="percentage" id="ht">95%</span>
+            </div>
+
+            <div data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500" class="container">
+                <span class="skill-title">CSS3</span>
+                <div class="progress-bar">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <span class="percentage">90%</span>
+            </div>
+
+            <div  data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"class="container">
+                <span class="skill-title">JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <span class="percentage" id="js">80%</span>
+            </div>
+
+            <div data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500" class="container">
+                <span class="skill-title">Bootstrap</span>
+                <div class="progress-bar">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <span class="percentage">90%</span>
+            </div>
+        </div>
+
+        <div class="blog">
+            <h1 class="title" id="blog-title">My Portfolio</h1>
+            <div class="cards-container">
+                <div class="card" style="background-color: #3498db;">
+                    <h2>To-do App</h2>
+                    <p>Website for task management and organization</p>
+                    <button class="first-card">View Project</button>
+                </div>
+                <div class="card" style="background-color: #f1c40f;">
+                    <h2>Personal Website</h2>
+                    <p>A showcase of my skills and experience</p>
+                    <button>View Project</button>
+                </div>
+                <div class="card" style="background-color: #2ecc71;">
+                    <h2>Random Color Generator</h2>
+                    <p>A platform for creating random color generation</p>
+                    <button class="third-card">View Project</button>
+                </div>
+                <div class="card" style="background-color: #e74c3c;">
+                    <h2>Energy Drink Website</h2>
+                    <p>An website of shilajeet energy drink as a sample</p>
+                    <button class="fourth-card">View Project</button>
+                </div>
+                <div class="card" style="background-color: #9b59b6;">
+                    <h2>Palindrome Checker</h2>
+                    <p>A mini palindrome checker website</p>
+                    <button class="fivth-card">View Project</button>
+                </div>
+                <div class="card" style="background-color: #1abc9c;">
+                    <h2>RGB Color Generator</h2>
+                    <p>A website for generating RGB color</p>
+                    <button class="sixth-card">View Project</button>
+                </div>
+                <div class="card" style="background-color: #16a085;">
+                    <h2>Business Card with Chatbot</h2>
+                    <p>A conversational AI for customer support and my business card</p>
+                    <button class="seventh-card">View Project</button>
+                </div>
+                <div class="card" style="background-color: #27ae60;">
+                    <h2>Counter Application</h2>
+                    <p>A simple counter application</p>
+                    <button class="eighth-card">View Project</button>
+                </div>
+                <div class="card" style="background-color: #8e44ad;">
+                    <h2>BMI Calculator</h2>
+                    <p>A website for calculating BMI</p>
+                    <button class="ninth-card">View Project</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <h2 class="title">About Me</h2>
+            <div class="about-section">
+                <div  data-aos="zoom-out" class="about-pic"><img src="supawork-image-20250103T043600050Z.png-removebg-preview-removebg-preview.png" alt=""></div>
+                <div class="about-text">
+                    <h2><b><i>Hello, this is Hassnain</i></b></h2>
+                    <p>I'm a skilled web designer and frontend developer, specializing in high-quality landing pages, mini websites, and user-friendly web experiences. With expertise in <span>HTML</span>, <span>CSS</span>, and <span>JavaScript</span>, I create visually appealing, responsive, and fast-loading websites that drive engagement and conversions.
+
+                        Beyond web development, I'm continuously expanding my skills in AI, machine learning, and high-income digital technologies to stay ahead in the evolving tech landscape. My mission is to combine creativity with technology to help businesses and brands grow online.
+
+                        Looking for a professional website or landing page? Let's create something amazing together</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<section class="contact">
+    <div class="contact-container">
+        <div class="contact-box">
+            <div class="left">
+                <img src="IMG_20250228_103044 (1).jpg" alt="">
+            </div>
+            <div class="right">
+                <h2>Get in Touch</h2>
+                <form action="submit">
+                    <div class="input-box">
+                        <label>Enter Your Name:</label>
+                        <input id="Name" required type="text" placeholder="please enter your name">
+                    </div>
+
+                    <div class="input-box">
+                        <label>Enter Your email:</label>
+                        <input  id="Email" type="email" placeholder="please enter your Email">
+                    </div>
+
+
+
+                    <div class="input-box">
+                        <label>Enter Your number:</label>
+                        <input id="number" type="number" placeholder="please enter your number">
+                    </div>  
+
+
+                    <button class="contactbutton" type="submit">Subscribe</button>
+                </form>
+<div class="social-icons">
+    <i id="icon3" class="fa-brands fa-youtube"></i>
+    <i  id="icon4" class="fa-brands fa-facebook"></i>
+    <i  id="icon5" class="fa-brands fa-github"></i>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<script src="app.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html> 
